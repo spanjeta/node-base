@@ -1,0 +1,26 @@
+ These are the points to be included and should be checked before releasing a project:
+---------------------------------------------------------------------------------------
+
+    - Clean and separate routing.
+    - Check htaccess Rules.
+    - Check Access Rules.
+    - Declare secret keys in .env files. (backend)
+    - Encode consoles and content (security issue- hacking).
+    - In every folder of root of project except themes and assets.
+    - Log error to Admin.
+    - Make a global function for error handling of callbacks.
+    - Make separate folder (example: utils ) for constant files and other reusables.
+    - No hard codes.
+    - Password should not be stored in any way
+    - Password Strong Validation
+    - Remove consoles
+    - Remove Commented Code
+    - Remove Extra Files/modules and uninstall unused modules
+    - Remove css and js libraries if not required.
+    - Schema (mongodb).
+    - Tokenization.
+    - Use ‘use strict’.
+    - Use guard for front end to prevent access by non-authorized user ( front end).
+    - Use related data delete in every mode.
+    - Validations with schema.
+    - Use lazy loading for modules

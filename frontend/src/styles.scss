@@ -1,0 +1,49 @@
+/*
+@copyright : ToXSL Technologies Pvt. Ltd. < www.toxsl.com >
+@author     : Shiv Charan Panjeta < shiv@toxsl.com >
+ 
+All Rights Reserved.
+Proprietary and confidential :  All information contained herein is, and remains
+the property of ToXSL Technologies Pvt. Ltd. and its partners.
+Unauthorized copying of this file, via any medium is strictly prohibited.
+*/
+
+/* You can add global styles to this file, and also import other style files */
+section.form-dark {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+section.form-dark .card.card-image {
+    margin: auto;
+    background-size: 100%;
+}
+section.form-dark .card.card-image {
+    .form-control {
+        padding: 7px 15px;
+        width: 100% !important;
+        box-sizing: inherit;
+    }
+    label {
+        font-weight: 300;
+        color: #fff !important;
+    }
+    .md-form label {
+        position: absolute;
+        top: 0.35rem;
+        left: 0;
+        transition: 0.2s ease-out;
+        cursor: text;
+        color: #757575;
+    }
+}
+.error {
+    color: #f00;
+    font-size: 12px;
+}
+form.ng-dirty.ng-touched.ng-valid {
+    width: 100% !important;
+}

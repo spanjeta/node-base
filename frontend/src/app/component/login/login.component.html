@@ -1,0 +1,73 @@
+<!-- @copyright : ToXSL Technologies Pvt. Ltd. < www.toxsl.com >
+@author     : Shiv Charan Panjeta < shiv@toxsl.com >
+ 
+All Rights Reserved.
+Proprietary and confidential :  All information contained herein is, and remains
+the property of ToXSL Technologies Pvt. Ltd. and its partners.
+Unauthorized copying of this file, via any medium is strictly prohibited. -->
+
+<!--Section: Live preview-->
+<section class="form-dark">
+
+  <!--Form without header-->
+  <div class="card card-image"
+    style="background-image: url('https://mdbootstrap.com/img/Photos/Others/pricing-table7.jpg'); width: 28rem;">
+    <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
+
+      <!--Header-->
+      <div class="text-center">
+        <h3 class="white-text mb-5 mt-4 font-weight-bold">
+          <strong>SIGN</strong>
+          <a class="green-text font-weight-bold">
+            <strong> IN</strong>
+          </a>
+        </h3>
+      </div>
+
+      <!--Body-->
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="md-form">
+          <input type="text" id="email" class="form-control white-text" formControlName="email" mdbInput>
+          <label for="email">Your email</label>
+          <div *ngIf="submitted && f.email.errors" class="error">
+            <div *ngIf="f.email.errors.required">Email is required</div>
+            <div *ngIf="!f.email.errors.required && f.email.errors.email">Invalid email</div>
+          </div>
+        </div>
+
+        <div class="md-form pb-3">
+          <input type="password" id="password" class="form-control white-text" formControlName="password" mdbInput>
+          <label for="password">Your password</label>
+          <div *ngIf="submitted && f.password.errors" class="error">
+            <div *ngIf="f.password.errors.required">Password is required</div>
+            <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
+          </div>
+        </div>
+      </form>
+
+      <!--Grid row-->
+      <div class="row d-flex align-items-center mb-4">
+
+        <!--Grid column-->
+        <div class="text-center mb-3 col-md-12">
+          <button type="button" (click)="onSubmit()" mdbBtn color="success" block="true" rounded="true"
+            class="z-depth-1 waves-light" mdbWavesEffect>Sign in</button>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+
+      <!--Grid column-->
+      <div class="col-md-12">
+        <p class="font-small white-text d-flex justify-content-end">
+          <a class="green-text ml-1 font-weight-bold" [routerLink]="['/register']">Sign Up</a>
+        </p>
+      </div>
+      <!--Grid column-->
+
+    </div>
+  </div>
+  <!--/Form without header-->
+
+</section>
+<!--Section: Live preview-->
